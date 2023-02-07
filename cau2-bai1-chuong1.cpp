@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
 
-int main () {
-	float a,b,c;
+int main()
+{
+	float a, b, c;
 	printf("Nhap vao a: ");
 	scanf("%f", &a);
 	printf("Nhap vao b: ");
@@ -10,13 +11,20 @@ int main () {
 	printf("Nhap vao c: ");
 	scanf("%f", &c);
 
-	if(a>b && a>c) {
+	if (a > b && a > c)
+	{
 		printf("%g lon nhat", a);
-	} else if(b>a && b>c) {
+	}
+	else if (b > a && b > c)
+	{
 		printf("%g lon nhat", b);
-	} else if(c>a && c>b) {
+	}
+	else if (c > a && c > b)
+	{
 		printf("%g lon nhat", c);
-	} else {
+	}
+	else
+	{
 		printf("Ca ba so deu bang nhau");
 	}
 
