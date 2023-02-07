@@ -30,7 +30,7 @@ int main()
 		printf("Thi hong!!");
 	}
 
-	printf("\nDiem trung binh: %g", sum / 3);
+	printf("\nDiem trung binh: %g", sum / 3); //them cho dep thoi chu khong can thiet
 
 	getch();
 	return 0;
