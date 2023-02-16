@@ -1,3 +1,7 @@
+// Sorry ae tớ không hiểu được đề bài hỏi gì nên làm theo ý hiểu.
+// Bài này sử dụng mảng 2 chiều.
+#include<stdio.h>
+
 int main()
 {
     char can[10][10] = {"Canh", "Tan", "Nham", "Quy", "Giap", "At", "Binh", "Dinh", "Mau", "Ky"};
@@ -11,5 +15,3 @@ int main()
     return 0;
 }
 
-// Sorry ae tớ không hiểu được đề bài hỏi gì nên làm theo ý hiểu.
-// Bài này sử dụng mảng 2 chiều.
