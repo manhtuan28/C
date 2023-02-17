@@ -1,38 +1,18 @@
 #include <stdio.h>
-#include <math.h>
-#include <conio.h>
 
 int main()
 {
-    int n;
-    int count = 0;
-    printf("Nhap vao n: ");
+    int n, i, sum = 0;
+
+    printf("Nhap n: ");
     scanf("%d", &n);
 
-    if (n < 2)
+    for(i = 1; i <= n; i += 2) // lặp qua các số lẻ từ 1 đến n
     {
-        printf("%d khong phai so nguyen to", n);
-        getch();
-        return 0;
+        sum += i * i; // tính tổng bình phương các số lẻ
     }
 
-    for (int i = 2; i <= sqrt(n); i++)
-    {
-        if (n % i == 0)
-        {
-            count++;
-        }
-    }
+    printf("Tong binh phuong cac so le tu 1 den %d la: %d", n, sum);
 
-    if (count == 0)
-    {
-        printf("%d la so nguyen to", n);
-    }
-    else
-    {
-        printf("%d khong pha la so nguyen to", n);
-    }
-
-    getch();
     return 0;
 }
