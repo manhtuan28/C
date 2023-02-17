@@ -7,9 +7,9 @@ int main()
     printf("Nhap n: ");
     scanf("%d", &n);
 
-    for(i = 1; i <= n; i += 2) // lặp qua các số lẻ từ 1 đến n
+    for(i = 1; i <= n; i += 2)
     {
-        sum += i * i; // tính tổng bình phương các số lẻ
+        sum += i * i;
     }
 
     printf("Tong binh phuong cac so le tu 1 den %d la: %d", n, sum);
