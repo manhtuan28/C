@@ -11,7 +11,7 @@ int main()
     {
         if (n % i == 0)
         {
-            printf("\n%d", i);
+            printf(" %d ", i);
         }
     }
 
