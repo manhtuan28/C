@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-//Chịu chả hiểu đề bài hỏi như thế nào cả!!!
-//Nhờ chatGPT làm hộ!!!!
 //Ae đừng chép bài này nhé, chưa học đâuuuu.
 
 

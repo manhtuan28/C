@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-
-//Méo hiểu câu hỏi luôn:)))
-//Nhờ chat gpt làm hộ đó!!!!
-
 int main() {
     int i, j, k, product, sum;
 
