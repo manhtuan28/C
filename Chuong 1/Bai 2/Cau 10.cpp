@@ -1,6 +1,8 @@
-// Sorry ae tớ không hiểu được đề bài hỏi gì nên làm theo ý hiểu.
-// Bài này sử dụng mảng 2 chiều.
 #include<stdio.h>
+
+//Chịu chả hiểu đề bài hỏi như thế nào cả!!!
+//Nhờ chatGPT làm hộ!!!!
+
 
 int main()
 {
