@@ -3,14 +3,14 @@
 
 int main()
 {
-	float toan, ly, hoa;
-	float sum;
+	int toan, ly, hoa;
+	int sum;
 	printf("Nhap vao diem toan: ");
-	scanf("%f", &toan);
+	scanf("%d", &toan);
 	printf("Nhap vao diem ly: ");
-	scanf("%f", &ly);
+	scanf("%d", &ly);
 	printf("Nhap vao diem hoa: ");
-	scanf("%f", &hoa);
+	scanf("%d", &hoa);
 
 	sum = toan + ly + hoa;
 
