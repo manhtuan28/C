@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-void tinh(){
+void tinh()
+{
     int n;
     int count = 0;
     printf("Nhap vao n: ");
@@ -28,13 +29,11 @@ void tinh(){
     {
         printf("%d khong pha la so nguyen to", n);
     }
-
 }
 
-int main () {
+int main()
+{
     tinh();
-
-
 
     return 0;
 }
