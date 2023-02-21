@@ -17,6 +17,19 @@
     in ra net qua giai thua N! = %d, goi ham giaithua(n);
 */
 
+
+// khong dung ham de quy vi: o bai 4 chua hoc nen khong dung.
+
+// neu van thic thi day:
+/*
+    int giaithua(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * giaithua(n - 1);
+    }
+}
+*/
 int giaithua(int n)
 {
     int s = 1;
