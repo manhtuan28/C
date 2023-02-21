@@ -1,40 +1,52 @@
 #include <stdio.h>
 #include <math.h>
 
-void songuyento()
-{
-    int n, count = 0;
-    int i;
-    printf("Nhap vao n: ");
-    scanf("%d", &n);
+// 0 sai, 1 dung
 
+int songuyen(int n)
+{
     if (n < 2)
     {
-        printf("%d khong phai la so nguyen to", n);
+        return 0;
     }
 
-    for (i = 2; i <= sqrt(n); i++)
+    for (int i = 2; i <= sqrt(n); i++)
     {
         if (n % i == 0)
         {
-            count++;
+            return 0;
         }
     }
+    return 1;
+}
 
-    if (count == 0)
+void lapLai(int n)
+{
+    printf("\nCac so nguyen to nho hon %d la: ", n);
+    for (int i = 2; i < n; i++)
     {
-        printf("%d la so nguyen to\nSo nguyen to cua %d la: %d", n, n, i);
-    }
-    else
-    {
-        printf("%d khong phai so nguyen to", n);
+        if (songuyen(i) == 1)
+        {
+            printf("%d ", i);
+        }
     }
 }
 
 int main()
 {
+    int n;
+    printf("Nhap vao n: ");
+    scanf("%d", &n);
 
-    songuyento();
+    if (songuyen(n) == 1)
+    {
+        printf("%d la so nguyen to", n);
+    }
+    else
+    {
+        printf("%d khong phai so nguyen to", n);
+    }
+    lapLai(n);
 
     return 0;
 }

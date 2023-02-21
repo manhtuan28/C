@@ -1,28 +1,25 @@
 #include <stdio.h>
 #include <math.h>
 
-void canbachai()
-{
-    int n, ncanbac;
-    printf("Nhap vao mot so nguyen duong: ");
-    scanf("%d", &n);
 
-    if (n <= 0)
-    {
-        printf("So nhap khong hop le");
-    }
-    else
-    {
-        ncanbac = sqrt(n);
+// bai nay chep ChatGPT 
 
-        printf("%d", ncanbac);
+float canbachai(float n) {
+    if (n < 0) {
+        printf("Khong co can bac hai cua so am\n");
+        return -1;
+    } else {
+        return sqrt(n);
     }
 }
 
-int main()
-{
-
-    canbachai();
-
+int main() {
+    float n;
+    printf("Nhap vao so khong am: ");
+    scanf("%f", &n);
+    float result = canbachai(n);
+    if (result != -1) {
+        printf("Can bac hai cua %g la %.2f\n", n, result);
+    }
     return 0;
 }
