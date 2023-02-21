@@ -2,8 +2,6 @@
 #include <math.h>
 
 
-// bai nay chep ChatGPT 
-
 float canbachai(float n) {
     if (n < 0) {
         printf("Khong co can bac hai cua so am\n");
