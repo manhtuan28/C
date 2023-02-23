@@ -1,4 +1,4 @@
-//Giong bai 5
+// Giong bai 5
 
 #include <stdio.h>
 #include <math.h>

@@ -7,7 +7,7 @@ int main()
     printf("Nhap n: ");
     scanf("%d", &n);
 
-    for(i = 1; i <= n; i += 2)
+    for (i = 1; i <= n; i += 2)
     {
         sum += i * i;
     }

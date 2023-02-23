@@ -17,7 +17,6 @@
     in ra net qua giai thua N! = %d, goi ham giaithua(n);
 */
 
-
 // khong dung ham de quy vi: o bai 4 chua hoc nen khong dung.
 
 // neu van thic thi day:

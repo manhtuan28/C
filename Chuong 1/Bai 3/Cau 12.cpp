@@ -7,7 +7,7 @@ int main()
     printf("Nhap a, b: ");
     scanf("%d%d", &a, &b);
 
-    for (int i = 1; i <= a && i <= b; i++) //tinh usc lon nhat nay
+    for (int i = 1; i <= a && i <= b; i++) // tinh usc lon nhat nay
     {
         if (a % i == 0 && b % i == 0)
         {

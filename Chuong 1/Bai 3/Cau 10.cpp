@@ -12,13 +12,13 @@ a dme pow bieu dien la: pow(x,y);
 
 ui doi bai de vai lon
 */
-int main() {
-	double N = 6000000;   //dan so ban dau
-	double r = 1.8;    // ty le dan so
-	int t = 10;       // so nam
-	
-	double N_10 = N * pow(1 + r/100, t);  //pow tinh luy thua
+int main()
+{
+	double N = 6000000; // dan so ban dau
+	double r = 1.8;		// ty le dan so
+	int t = 10;			// so nam
 
+	double N_10 = N * pow(1 + r / 100, t); // pow tinh luy thua
 
 	printf("Dân so cua thành pho sau 10 nam la: %f\n", N_10);
 
