@@ -2,17 +2,13 @@
 
 int to_hop(int k, int n)
 {
-    if (k == 0)
+    if (k == 0 || k == n)
     {
         return 1;
     }
-    else if (k > n)
-    {
-        return 0;
-    }
     else
     {
-        return (n - k + 1) / k * to_hop(k - 1, n);
+        return to_hop(k, n - 1) + to_hop(k - 1, n - 1);
     }
 }
 
@@ -26,6 +22,5 @@ int main()
 
     int c = to_hop(k, n);
     printf("To hop chap %d cua %d la %d", k, n, c);
-
     return 0;
 }
