@@ -6,7 +6,6 @@ int main () {
     printf("Nhap vao so n: ");
     scanf("%d", &n);
 
-    if(0 <= n && n <= 5){
         switch (n)
         {
         case 1:
@@ -28,10 +27,6 @@ int main () {
             printf("Len google ma dich deo ai biet");
             break;
         }
-    }
-    else{
-        return 0;
-    }
 
     getch();
     return 0;
