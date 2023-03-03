@@ -1,3 +1,5 @@
+//Chi can lam mot phan này thoi !!!!!!
+
 #include <stdio.h>
 
 int giai_thua(int n)

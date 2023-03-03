@@ -12,6 +12,11 @@ a dme pow bieu dien la: pow(x,y);
 
 ui doi bai de vai lon
 */
+
+
+
+// Khong can chep bai nay vao vo!!!!!!!
+
 int main()
 {
 	double N = 6000000; // dan so ban dau
