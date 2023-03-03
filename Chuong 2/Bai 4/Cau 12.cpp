@@ -20,4 +20,5 @@ int main()
     scanf("%d", &k);
 
     printf("Tong giai thua tu 1 den %d la: %d", k, GT(k));
+    return 0;
 }
