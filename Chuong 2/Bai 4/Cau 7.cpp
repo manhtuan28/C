@@ -21,12 +21,9 @@ int main()
 	scanf("%d", &a);
 	printf("Nhap vao b: ");
 	scanf("%d", &b);
-
-	int uscln = tim_uscln(a, b);
-	printf("Uoc so chung lon nhat cua %d va %d la: %d\n", a, b, uscln);
-
-	int bscnn = tim_bscnn(a, b);
-	printf("Boi so chung nho nhat cua %d va %d la: %d", a, b, bscnn);
+	
+	printf("Uoc so chung lon nhat cua %d va %d la: %d\n", a, b, tim_uscln(a,b));
+	printf("Boi so chung nho nhat cua %d va %d la: %d", a, b, tim_bscnn(a,b));
 
 	return 0;
 }
