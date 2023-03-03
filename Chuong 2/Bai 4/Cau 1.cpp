@@ -5,7 +5,6 @@ int nguyento(int n)
 {
     if (n < 2)
     {
-        printf("%d khong phai so nguyen to", n);
         return 1;
     }
 
@@ -13,7 +12,6 @@ int nguyento(int n)
     {
         if (n % i == 0)
         {
-            printf("%d khong phai so nguyen to", n);
             return 1;
         }
     }
@@ -30,6 +28,9 @@ int main()
     {
         printf("%d la so nguyen to", n);
     }
+    else{
+    	printf("%d khong phai so nguyen to", n);
+	}
 
     return 0;
 }
