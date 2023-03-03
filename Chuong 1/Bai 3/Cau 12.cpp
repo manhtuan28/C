@@ -26,7 +26,7 @@ int main()
         max++;
     }
 
-    printf("USC lon nhat cau 2 so la: %d\n", USC);
+    printf("USC lon nhat cua 2 so la: %d\n", USC);
     printf("Boi so chung nho nhat cua 2 so la: %d", bsc);
 
     return 0;
