@@ -30,7 +30,7 @@ int main()
     }
     else
     {
-        printf("%d khong pha la so nguyen to", n);
+        printf("%d khong phai la so nguyen to", n);
     }
 
     getch();
