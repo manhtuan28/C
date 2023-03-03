@@ -10,7 +10,7 @@ int chinhphuong(int n)
 int main()
 {
     int n;
-    printf("hap vao n: ");
+    printf("Nhap vao n: ");
     scanf("%d", &n);
 
     if (chinhphuong(n) == 1)
