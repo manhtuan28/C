@@ -19,9 +19,7 @@ int main()
 	printf("Nhap vao n: ");
 	scanf("%d", &n);
 
-	double kq = giaithua(n);
-
-	printf("Tong nghich dao cua %d la: %f", n, kq);
+	printf("Tong nghich dao cua %d la: %f", n, giaithua(n));
 
 	return 0;
 }
