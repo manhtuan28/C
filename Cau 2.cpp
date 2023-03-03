@@ -1,4 +1,5 @@
 // tinh tong and trung bin cong chiu nheeee.
+//chua xong dau ae dung chep.....
 
 #include <stdio.h>
 
