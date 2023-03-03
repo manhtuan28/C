@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/*
-    Bai cho cho lam
-    kho vai ca cac
-*/
-
 int main()
 {
     int a, b, c, d;
