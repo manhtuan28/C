@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// 0 sai, 1 dung
-
 int songuyen(int n)
 {
     if (n < 2)
