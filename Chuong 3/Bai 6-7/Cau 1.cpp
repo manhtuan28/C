@@ -19,23 +19,30 @@ void hien_thi(int a[], int n)
     }
 }
 
-int tinh_tong()
-{
-    int sum = 0;
-    for (int i = 10; i < 40; i++)
-    {
-        sum += i;
-    }
-    return sum;
+
+
+int tinh_tong (int a[], int n){
+	int sum = 0;
+	for(int i = 0; i < n; i++){
+		if(a[i] >= 10 && a[i] <= 40){
+			sum+=a[i];
+		}
+	}
+	return sum;
 }
 
-float tinh_tbc()
-{
-    int tong = tinh_tong();
-    int soluong = 40 - 10 + 1;
-    float tbc = (float)tong / soluong;
-    return tbc;
+
+float tinh_tbc (int a[], int n){
+	float dem = 0;
+	for(int i = 0; i < n; i++){
+		if(a[i] >= 10 && a[i] <= 40){
+			dem++;
+		}
+	}
+	float tbc = tinh_tong(a,n) / dem;
+	return tbc;
 }
+
 
 int nho_nhat(int a[], int n)
 {
@@ -84,9 +91,11 @@ int main()
 
     nhap_so(a, n);
     hien_thi(a, n);
-    printf("\n-Tong cac so tu 10-40 la: %d", tinh_tong());
-    printf("\n-Trung binh cong tu 10-30 la: %.2f", tinh_tbc());
+    
+    printf("\n-Tong cac so trong khoang tu [10, 40] la: %d", tinh_tong(a,n));
+    printf("\n-Trung binh cong cac so trong khoang tu [10, 40] la: %.2f", tinh_tbc(a,n));
     printf("\n-So nho nhat trong day so nguyen vua nhap la: %d", nho_nhat(a, n));
+    
     sap_xep_giam_dan(a, n);
     hien_thi_giam(a, n);
 
