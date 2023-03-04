@@ -38,7 +38,7 @@ int main()
     }
     else
     {
-        printf("Tong hop chap %d cua %d la %d", k, n, tophopchapk(n,k));
+        printf("To hop chap %d cua %d la %d", k, n, tophopchapk(n,k));
     }
     return 0;
 }
