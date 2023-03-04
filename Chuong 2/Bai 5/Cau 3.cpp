@@ -17,7 +17,7 @@ int main()
     int n, sum;
     printf("Nhap vao so n: ");
     scanf("%d", &n);
-    sum = tong(n);
-    printf("Tong S = 1+2+3+...+%d la: %d", n, sum);
+
+    printf("Tong S = 1+2+3+...+%d la: %d", n, tong(n));
     return 0;
 }

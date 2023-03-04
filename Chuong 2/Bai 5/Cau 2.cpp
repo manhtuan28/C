@@ -31,9 +31,7 @@ int main()
     printf(">> Nhap vao so b: ");
     scanf("%d", &b);
 
-    int ucln = timucln(a, b);
-
-    printf("Uoc chung lon nhat cua %d va %d la: %d\n", a, b, ucln);
+    printf("Uoc chung lon nhat cua %d va %d la: %d\n", a, b, timucln(a,b));
 
     return 0;
 }
