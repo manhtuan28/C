@@ -26,7 +26,6 @@ int main()
     printf("Nhap vao n: ");
     scanf("%d", &n);
 
-    int c = to_hop(k, n);
-    printf("To hop chap %d cua %d la: %d", k, n, c);
+    printf("To hop chap %d cua %d la: %d", k, n, to_hop(k, n));
     return 0;
 }
