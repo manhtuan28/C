@@ -34,12 +34,11 @@ int main()
 
     if (k < 0 || k > n)
     {
-        printf("Khong the tinh toan tong hop chap k cua n!");
+        printf("Khong the tinh toan to hop chap k cua n!");
     }
     else
     {
-        int result = tophopchapk(n, k);
-        printf("Tong hop chap %d cua %d la %d", k, n, result);
+        printf("Tong hop chap %d cua %d la %d", k, n, tophopchapk(n,k));
     }
     return 0;
 }
