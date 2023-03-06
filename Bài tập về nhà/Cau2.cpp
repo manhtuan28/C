@@ -24,7 +24,7 @@ void xoa_phan_tu(int a[], int n, int k)
 {
     if (k < 0 || k >= n)
     {
-        printf("Vi tri %d khong hop le", n);
+        printf("Vi tri %d khong hop le", k);
         return;
     }
 
