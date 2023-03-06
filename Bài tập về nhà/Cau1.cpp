@@ -20,8 +20,12 @@ void hien_thi(int a[], int n)
     }
 }
 
-void them_phan_tu(int a[], int n, int k, int x)
+void them_phan_tu(int a[], int n, int x, int k)
 {
+    printf("\nNhap vao vi tri can doi: ");
+    scanf("%d", &k);
+    printf("Nhap vao gia tri can thay doi: ");
+    scanf("%d", &x);
     if (k < 0 || k >= n)
     {
         printf("Vi tri %d khong hop le", k);
@@ -34,7 +38,7 @@ void them_phan_tu(int a[], int n, int k, int x)
     }
     a[k] = x;
     n++;
-    printf("\nMang sau khi duoc them: ");
+    printf("Sau khi them: ");
     for (int i = 0; i < n; i++)
     {
         printf("%6d", a[i]);
@@ -44,18 +48,13 @@ void them_phan_tu(int a[], int n, int k, int x)
 int main()
 {
     int a[Tuancute];
-    int n, k, x;
+    int n, x, k;
     printf("Nhap n: ");
     scanf("%d", &n);
 
     nhap_so(a, n);
     hien_thi(a, n);
-
-    printf("\nNhap vao vi tri can doi: ");
-    scanf("%d", &k);
-    printf("Nhap gia tri: ");
-    scanf("%d", &x);
-    them_phan_tu(a, n, k, x);
+    them_phan_tu(a, n, x, k);
 
     return 0;
 }

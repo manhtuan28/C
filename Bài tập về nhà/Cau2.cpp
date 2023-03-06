@@ -22,6 +22,8 @@ void hien_thi(int a[], int n)
 
 void xoa_phan_tu(int a[], int n, int k)
 {
+    printf("\nNhap vao vi tri can xoa: ");
+    scanf("%d", &k);
     if (k < 0 || k >= n)
     {
         printf("Vi tri %d khong hop le", k);
@@ -33,7 +35,7 @@ void xoa_phan_tu(int a[], int n, int k)
         a[i] = a[i + 1];
     }
     n--;
-    printf("\nHam sau khi duoc xoa la: ");
+    printf("Sau khi xoa: ");
     for (int i = 0; i < n; i++)
     {
         printf("%6d", a[i]);
@@ -49,9 +51,6 @@ int main()
 
     nhap_so(a, n);
     hien_thi(a, n);
-
-    printf("\nNhap vao vi tri can xoa: ");
-    scanf("%d", &k);
     xoa_phan_tu(a, n, k);
 
     return 0;
