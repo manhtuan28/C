@@ -2,9 +2,10 @@
 
 int main()
 {
-    int a, b, nhapPT;
+    int a, b;
+    char nhapPT;
     printf("===MENU===\n1.+\n2.-\n3.*\n4./\nVui long chon phep tinh: ");
-    scanf("%d", &nhapPT);
+    scanf("%c", &nhapPT);
     printf("Nhap vao a va b: ");
     scanf("%d %d", &a, &b);
 
