@@ -36,7 +36,7 @@ int tong(int a[], int n)
 float trung_binh_cong(int a[], int n)
 {
 	float dem = 0;
-	for (int i = 0; i <= n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		if (a[i] >= 10 && a[i] <= 40)
 		{

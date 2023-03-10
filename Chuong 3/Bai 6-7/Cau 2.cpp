@@ -20,7 +20,7 @@ void hien_thi (float a[], int n) {
 float tinh_tong (float a[], int n) {
 	float sum = 0;
 	for(int i = 0; i < n; i++) {
-		if(a[i] >= -10 && a[i] <= 40) {
+		if(a[i] >= -10 && a[i] <= 20) {
 			sum+=a[i];
 		}
 	}
@@ -30,7 +30,7 @@ float tinh_tong (float a[], int n) {
 float tinh_tbc (float a[], int n) {
 	int dem = 0;
 	for(int i = 0; i < n; i++) {
-		if(a[i] >= -10 && a[i] <= 40) {
+		if(a[i] >= -10 && a[i] <= 20) {
 			dem++;
 		}
 	}
@@ -62,15 +62,15 @@ void chen_so(float a[], int n, float k, int m) {
 }
 
 int main () {
-	float a[Tuancute],k;
+	float a[Tuancute],k;	
 	int n,m;
 	printf("Nhap vao so luong so thuc: ");
 	scanf("%d", &n);
 
 	nhap_so(a,n);
 	hien_thi(a,n);
-	printf("\n-Tong cac so trong khoang [-10, 40] la: %g", tinh_tong(a,n));
-	printf("\n-Trung binh cong cac so trong khoang [-10, 40] la: %g", tinh_tbc(a,n));
+	printf("\n-Tong cac so trong khoang [-10, 20] la: %g", tinh_tong(a,n));
+	printf("\n-Trung binh cong cac so trong khoang [-10, 20] la: %g", tinh_tbc(a,n));
 	printf("\n-So lon nhat tinh theo so nguyen la: %d", so_lon_nhat(a,n));
 
 	chen_so(a, n, k, m);
