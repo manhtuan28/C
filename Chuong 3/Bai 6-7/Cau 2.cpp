@@ -56,7 +56,8 @@ void chen_so(float a[], int n, float k, int m) {
 	for (int i = n - 1; i >= m; i--) {
 		a[i + 1] = a[i];
 	}
-	a[m] = k;
+	a[k] = m;
+	n++;
 	printf("-Day so sau khi chen k vao vi tri m:\n");
 	hien_thi(a, n + 1);
 }
