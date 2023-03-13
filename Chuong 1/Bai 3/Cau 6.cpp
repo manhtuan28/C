@@ -1,23 +1,22 @@
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int num, digit, sum;
+    int so, chuSo, tong;
 
-    for (num = 100; num <= 999; num++)
+    for (so = 100; so <= 999; so++)
     {
-        sum = 0;
-        int temp = num;
+        tong = 0;
+        int temp = so;
         while (temp > 0)
         {
-            digit = temp % 10;
-            sum += pow(digit, 3);
+            chuSo = temp % 10;
+            tong += chuSo * chuSo * chuSo;
             temp /= 10;
         }
-        if (sum == num)
+        if (tong == so)
         {
-            printf("%d\n", num);
+            printf("%d\n", so);
         }
     }
 

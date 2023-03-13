@@ -2,19 +2,14 @@
 
 int main()
 {
-    int i, j, k, product, sum;
-
-    printf("Cac so nguyen gom 3 chu so co tich bang tong cac chu so la:\n");
-
-    for (i = 1; i <= 9; i++)
+    printf("Cac so nguyen co 3 chu so tong va tich bang nhau la: ");
+    for (int i = 1; i <= 9; i++)
     {
-        for (j = 0; j <= 9; j++)
+        for (int j = 0; j <= 9; j++)
         {
-            for (k = 0; k <= 9; k++)
+            for (int k = 0; k <= 9; k++)
             {
-                product = i * j * k;
-                sum = i + j + k;
-                if (product == sum && i != j && j != k && k != i)
+                if (i * j * k == i + j + k)
                 {
                     printf("%d%d%d\n", i, j, k);
                 }
