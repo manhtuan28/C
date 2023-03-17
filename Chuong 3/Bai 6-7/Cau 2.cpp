@@ -2,6 +2,40 @@
 
 #define MAX_ARR 100
 
+void nhap_mang(float a[], int n);
+void hien_thi(float a[], int n);
+float tinh_tong(float a[], int n);
+float tinh_tbc(float a[], int n);
+float so_lon_nhat(float a[], int n);
+void them_phan_tu(float a[], int n);
+
+int main()
+{
+	float a[MAX_ARR];
+	int n;
+	printf("Nhap vao so n: ");
+	scanf("%d", &n);
+
+	nhap_mang(a, n);
+	hien_thi(a, n);
+
+	if (tinh_tong(a, n) == 0)
+		printf("\n>> Khong co so nao trong khoang [-10,20]");
+	else
+		printf("\n>> Tong trong khoang [-10,20] la: %g", tinh_tong(a, n));
+
+	if (tinh_tbc(a, n) == 0)
+		printf("\n>> Khong co so nao trong khoang [-10,20]");
+	else
+		printf("\n>> Trung binh cong trong khoang [-10,40] la: %g", tinh_tbc(a, n));
+
+	printf("\n>> So lon nhat trong mang la: %g", so_lon_nhat(a, n));
+
+	them_phan_tu(a, n);
+
+	return 0;
+}
+
 void nhap_mang(float a[], int n)
 {
 	for (int i = 0; i < n; i++)
@@ -87,31 +121,4 @@ void them_phan_tu(float a[], int n)
 	n++;
 	printf("\n>> Sau khi them phan tu: ");
 	hien_thi(a, n);
-}
-
-int main()
-{
-	float a[MAX_ARR];
-	int n;
-	printf("Nhap vao so n: ");
-	scanf("%d", &n);
-
-	nhap_mang(a, n);
-	hien_thi(a, n);
-
-	if (tinh_tong(a, n) == 0)
-		printf("\n>> Khong co so nao trong khoang [-10,20]");
-	else
-		printf("\n>> Tong trong khoang [-10,20] la: %g", tinh_tong(a, n));
-
-	if (tinh_tbc(a, n) == 0)
-		printf("\n>> Khong co so nao trong khoang [-10,20]");
-	else
-		printf("\n>> Trung binh cong trong khoang [-10,40] la: %g", tinh_tbc(a, n));
-
-	printf("\n>> So lon nhat trong mang la: %g", so_lon_nhat(a, n));
-
-	them_phan_tu(a, n);
-
-	return 0;
 }
