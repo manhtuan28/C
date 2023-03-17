@@ -1,8 +1,43 @@
 #include <stdio.h>
 
-#define Tuancute 100
+#define MAX_ARR 100
 
-void nhap_so(int a[], int n)
+void nhap_mang(int a[], int n);
+void hien_thi(int a[], int n);
+int tinh_tong(int a[], int n);
+float tinh_tbc(int a[], int n);
+int so_nho_nhat(int a[], int n);
+void sap_xep_giam(int a[], int n);
+
+int main()
+{
+	int a[MAX_ARR];
+	int n;
+	printf("Nhap vao so n: ");
+	scanf("%d", &n);
+
+	nhap_mang(a, n);
+	printf("\n>> Cac so co trong mang la: ");
+	hien_thi(a, n);
+
+	if (tinh_tong(a, n) == 0)
+		printf("\n>> Khong co so nao trong khoang [10,40]");
+	else
+		printf("\n>> Tong cac so trong khoang [10,40] la: %d", tinh_tong(a, n));
+
+	if (tinh_tbc(a, n) == 0)
+		printf("\n>> Khong co so nao trong khoang [10,40]");
+	else
+		printf("\n>> Trung binh cong cac so trong khoang [10,40] la: %.2f", tinh_tbc(a, n));
+
+	printf("\n>> So nho nhat trong mang la: %d", so_nho_nhat(a, n));
+
+	sap_xep_giam(a, n);
+
+	return 0;
+}
+
+void nhap_mang(int a[], int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -13,14 +48,13 @@ void nhap_so(int a[], int n)
 
 void hien_thi(int a[], int n)
 {
-	printf("Cac so co trong mang la: ");
 	for (int i = 0; i < n; i++)
 	{
 		printf("%d ", a[i]);
 	}
 }
 
-int tong(int a[], int n)
+int tinh_tong(int a[], int n)
 {
 	int sum = 0;
 	for (int i = 0; i < n; i++)
@@ -33,7 +67,7 @@ int tong(int a[], int n)
 	return sum;
 }
 
-float trung_binh_cong(int a[], int n)
+float tinh_tbc(int a[], int n)
 {
 	float dem = 0;
 	for (int i = 0; i < n; i++)
@@ -43,12 +77,15 @@ float trung_binh_cong(int a[], int n)
 			dem++;
 		}
 	}
-
-	float tbc = tong(a, n) / dem;
+	if (dem == 0)
+	{
+		return 0;
+	}
+	float tbc = tinh_tong(a, n) / dem;
 	return tbc;
 }
 
-int nho_nhat(int a[], int n)
+int so_nho_nhat(int a[], int n)
 {
 	int min = a[0];
 
@@ -64,11 +101,11 @@ int nho_nhat(int a[], int n)
 
 void sap_xep_giam(int a[], int n)
 {
-	for (int i = 0; i <= n - 1; i++)
+	for (int i = 0; i < n - 1; i++)
 	{
 		for (int j = 0; j < n - i - 1; j++)
 		{
-			if (a[j] < a[j + 1])
+			if (a[j + 1] > a[j])
 			{
 				int temp = a[j];
 				a[j] = a[j + 1];
@@ -76,28 +113,6 @@ void sap_xep_giam(int a[], int n)
 			}
 		}
 	}
-	printf("Sap xep giam dan: ");
-	for (int i = 0; i < n; i++)
-	{
-		printf("%d ", a[i]);
-	}
-}
-
-int main()
-{
-	int a[Tuancute];
-	int n;
-	printf("Nhap vao so gia tri mang can: ");
-	scanf("%d", &n);
-
-	nhap_so(a, n);
+	printf("\n>> Sau khi sap xep giam la: ");
 	hien_thi(a, n);
-
-	printf("\n\nTong cac so tu [10,40] la: %d\n", tong(a, n));
-	printf("\nTBC cac so tu [10,40] la: %.2f\n", trung_binh_cong(a, n));
-	printf("\nSo nho nhat trong mang la: %d\n\n", nho_nhat(a, n));
-
-	sap_xep_giam(a, n);
-
-	return 0;
 }
