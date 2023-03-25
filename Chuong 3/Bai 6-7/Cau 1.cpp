@@ -13,24 +13,24 @@ int main()
 {
 	int a[MAX_ARR];
 	int n;
-	printf("Nhap vao so n: ");
+	printf("Nhap vao so phan tu mang: ");
 	scanf("%d", &n);
 
 	nhap_mang(a, n);
-	printf("\n>> Cac so co trong mang la: ");
+	printf("\n\n>> Cac so co trong mang la: ");
 	hien_thi(a, n);
 
 	if (tinh_tong(a, n) == 0)
-		printf("\n>> Khong co so nao trong khoang [10,40]");
+		printf("\n\n>> Khong co so nao trong khoang [10,40]");
 	else
-		printf("\n>> Tong cac so trong khoang [10,40] la: %d", tinh_tong(a, n));
+		printf("\n\n>> Tong cac so trong khoang [10,40] la: %d", tinh_tong(a, n));
 
 	if (tinh_tbc(a, n) == 0)
-		printf("\n>> Khong co so nao trong khoang [10,40]");
+		printf("\n\n>> Khong co so nao trong khoang [10,40]");
 	else
-		printf("\n>> Trung binh cong cac so trong khoang [10,40] la: %.2f", tinh_tbc(a, n));
+		printf("\n\n>> Trung binh cong cac so trong khoang [10,40] la: %.2f", tinh_tbc(a, n));
 
-	printf("\n>> So nho nhat trong mang la: %d", so_nho_nhat(a, n));
+	printf("\n\n>> So nho nhat trong mang la: %d", so_nho_nhat(a, n));
 
 	sap_xep_giam(a, n);
 
@@ -113,6 +113,6 @@ void sap_xep_giam(int a[], int n)
 			}
 		}
 	}
-	printf("\n>> Sau khi sap xep giam la: ");
+	printf("\n\n>> Sau khi sap xep giam la: ");
 	hien_thi(a, n);
 }
