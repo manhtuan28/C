@@ -13,7 +13,7 @@ int main()
 {
 	float a[MAX_ARR];
 	int n;
-	printf("Nhap vao so n: ");
+	printf("Nhap vao so phan tu mang: ");
 	scanf("%d", &n);
 
 	nhap_mang(a, n);
