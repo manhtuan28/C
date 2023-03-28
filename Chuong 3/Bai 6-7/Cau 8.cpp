@@ -76,6 +76,18 @@ int timSoNguyenTrongMang(int a[], int kichThuoc, int x)
 	return 0;
 }
 
+int kiem_tra_tang(int a[], int n)
+{
+	for (int i = 1; i < n; i++)
+	{
+		if (a[i - 1] > a[i])
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
 void sapXepMangTangDan(int a[], int kichThuoc)
 {
 	for (int i = 0; i < kichThuoc - 1; i++)
@@ -101,7 +113,7 @@ int main()
 	int x;
 
 	khoiTaoMang(a, kichThuoc);
-	printf("\n>> Phan tu co trong mang: ");
+	printf("\n>> Mang duoc tao ngau nhien: ");
 	inMang(a, kichThuoc);
 
 	timMinMax(a, kichThuoc, &min, &max);
@@ -132,6 +144,16 @@ int main()
 			break;
 		}
 	}
+
+	if (kiem_tra_tang(a, kichThuoc))
+	{
+		printf("\n>> Day tren la day so tang\n");
+	}
+	else
+	{
+		printf("\n>> Day tren chua duoc sap xep tang\n");
+	}
+
 	if (!daSapXep)
 	{
 		sapXepMangTangDan(a, kichThuoc);
