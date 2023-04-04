@@ -10,7 +10,7 @@ int main()
 	printf("Nhap vao b: ");
 	scanf("%f", &b);
 	printf("Nhap vao c: ");
-	scanf("%f", &c);;
+	scanf("%f", &c);
 
 	if (a + b > c && b + c > a && c + a > b)
 	{
